@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Start JavaScript</h2>
+    <p>Make a unordered list</p>
+    <p id="demo"></p>
+
+<script>
+    const fruit = ["banana","apple","kiwi","guava"];
+    let text = "<ul>";
+
+    for(let i=0;i<fruit.length;i++){
+        text = text + "<li>" + fruit[i] + "</li>";
+    }
+    text = text + "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
