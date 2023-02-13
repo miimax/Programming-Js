@@ -15,5 +15,4 @@ describe('Test: HomePage', () =>{
             loginPage.clickLinkSelenium()
         })
       })
-      //bbbbbbbbbbbbbbbbbbbb
 })
