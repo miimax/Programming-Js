@@ -11,6 +11,7 @@ export function LoginUncessfullWithWrongPassword(){
     cy.get(txtPassword).type(infos.PASSWORD)
 
     cy.get(btnLogin).click()
+    
     cy.on('window:alert',(txt)=>{
         expect(txt).to.contains('not valid');
     })  
