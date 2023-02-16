@@ -7,7 +7,7 @@ class LoginPageGR {
         lnkContent: () => cy.get("Table Demo"),
     }
 
-    LoginUncessfullWithInvalidAccount(user) {
+    loginUncessfullWithInvalidAccount(user) {
         this.elements.txtUsername().type(user.username)
         this.elements.txtPassword().type(user.password)
         cy.screenshot()
