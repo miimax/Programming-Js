@@ -8,7 +8,7 @@ describe('Test: Login', () => {
         it("Visit page and input invalid account info, then login unsuccessfully", () => {
 
             cy.fixture('users').as('user').then((user) => {
-                LoginPageGR.LoginUncessfullWithInvalidAccount(user)
+                LoginPageGR.loginUncessfullWithInvalidAccount(user)
             })
         })
 
