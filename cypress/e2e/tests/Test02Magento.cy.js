@@ -4,18 +4,12 @@ import ProductDetailPage from "../pages/ProductDetailPage"
 import ProductPage from "../pages/ProductPage"
 
 describe("Test: Order Product", () =>{
-
-    
-    
-
     it("Visit page and choose product then add to cart successfully", () => {
         
         // .then((userData) => {
-        
         // })
 
         cy.visit("https://magento.softwaretestingboard.com/")
-        
         
         HomePage.chooseMenu("Women")
 
@@ -34,9 +28,5 @@ describe("Test: Order Product", () =>{
         ProductDetailPage.clickProceedToCheckout()
 
         OrderPage.fillInformations(cy.fixture('userData'))
-
-        
-
-        
     })
 })
