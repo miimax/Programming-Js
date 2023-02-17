@@ -23,4 +23,5 @@ class ProductDetailPage {
         this.elements.btnProceedToCheckout().click({ force: true })
     }
 }
+
 export default new ProductDetailPage()
