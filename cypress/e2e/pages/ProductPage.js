@@ -1,7 +1,6 @@
 class ProductPage {
-    chooseProduct(product){
+    chooseProduct(product) {
         cy.contains(product).click()
     }
-
 }
 export default new ProductPage()

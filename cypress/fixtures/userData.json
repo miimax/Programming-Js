@@ -5,7 +5,10 @@
     "company": "ABC Company",
     "streetAddress": "123 Le Duan",
     "city": "Danang",
-    "country": "Idaho",
+    "state": "Florida",
     "zip": "55555",
-    "phoneNumber": "+84905901111"
+    "country": "United States",
+    "phoneNumber": "+84905901111",
+    "shippingMethodFixed": "flatrate_flatrate",
+    "shippingMethodTableRate": "tablerate_bestway"
 }
