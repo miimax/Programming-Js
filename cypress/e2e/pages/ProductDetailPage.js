@@ -6,15 +6,9 @@ class ProductDetailPage {
         btnProceedToCheckout: () => cy.contains("Proceed to Checkout")
     }
 
-    chooseSize(size) {
-        cy.get("[aria-label='XS']").click()
-    }
-
-    chooseColor(color) {
-        cy.get("[aria-label='Green']").click()
-    }
-
-    clickBtnAddToCart() {
+    chooseProductSizeColor(size, color) {
+        cy.get(`[aria-label=${size}]`).click()
+        cy.get(`[aria-label=${color}]`).click()
         this.elements.btnAddToCart().click()
     }
 
@@ -24,13 +18,9 @@ class ProductDetailPage {
     }
 
     clickProceedToCheckout() {
-        cy.get("[data-bind='i18n: title']", { timeout: 10000 }).should('be.visible')
+        // cy.get("[data-bind='i18n: title']", { timeout: 10000 }).should('be.visible')
+        cy.get("[data-bind='i18n: title']").should('be.visible')
         this.elements.btnProceedToCheckout().click({ force: true })
     }
 }
 export default new ProductDetailPage()
-
-
-        // this.elements.lblOderTotal().should('be.visible').then(()=>{
-        //     this.elements.btnProceedToCheckout().click()
-        // })
