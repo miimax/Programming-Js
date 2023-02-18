@@ -37,8 +37,9 @@ class OrderPage {
         this.elements.btnPlaceOrder().click()
     }
 
-    verifyOderSuccessfully() {
+    verifyOrderSuccessfully() {
         this.elements.msgOrderSuccessfully().should('have.text', 'Thank you for your purchase!')
     }
 }
+
 export default new OrderPage()

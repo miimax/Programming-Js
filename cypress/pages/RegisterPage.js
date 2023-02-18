@@ -9,18 +9,19 @@ class RegisterPage {
         msgRegisterSuccessfully: () => cy.get(".logged-in").eq(0)
     }
 
-    createNewAccount(user) {
-        this.elements.txtFirstName().type(user.firstname)
-        this.elements.txtLastName().type(user.lastname)
-        this.elements.txtEmail().type(user.email)
-        this.elements.txtPassword().type("123Asd!123Asd")
-        this.elements.txtConfirmPwd().type("123Asd!123Asd")
+    createNewAccount(registerUser) {
+        this.elements.txtFirstName().type(registerUser.firstName)
+        this.elements.txtLastName().type(registerUser.lastName)
+        this.elements.txtEmail().type(registerUser.emailAddress)
+        this.elements.txtPassword().type(registerUser.password)
+        this.elements.txtConfirmPwd().type(registerUser.password)
         this.elements.btnCreateAnAccount().click()
     }
 
-    verifyCreateAccountSuccessfully(userName) {
+    verifyCreateAccountSuccessfully(registerUserName) {
         this.elements.msgRegisterSuccessfully()
-            .should('have.text', `Welcome, ${userName.firstname} ${userName.lastname}!`)
+            .should('have.text', `Welcome, ${registerUserName.firstName} ${registerUserName.lastName}!`)
     }
 }
+
 export default new RegisterPage()

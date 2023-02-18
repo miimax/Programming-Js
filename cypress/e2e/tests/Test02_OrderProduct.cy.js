@@ -1,7 +1,7 @@
-import HomePage from "../pages/HomePage"
-import OrderPage from "../pages/OrderPage"
-import ProductDetailPage from "../pages/ProductDetailPage"
-import ProductPage from "../pages/ProductPage"
+import HomePage from "../../pages/HomePage"
+import OrderPage from "../../pages/OrderPage"
+import ProductDetailPage from "../../pages/ProductDetailPage"
+import ProductPage from "../../pages/ProductPage"
 
 describe("Test: Order Product", () => {
     it("User order product successfully without login", () => {
@@ -25,6 +25,6 @@ describe("Test: Order Product", () => {
 
         OrderPage.placeOder()
 
-        OrderPage.verifyOderSuccessfully()
+        OrderPage.verifyOrderSuccessfully()
     })
 })
