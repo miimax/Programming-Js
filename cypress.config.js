@@ -6,8 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-
-  e2e: {
-      experimentalStudio: true
-    }
+  defalutCommandTime : 10000,
+  pageLoadTimeout: 10000
 });

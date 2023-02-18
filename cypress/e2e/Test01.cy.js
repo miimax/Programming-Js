@@ -1,5 +1,5 @@
 var loginPage = require('./pages/LoginPage')
-var infos = require("./utils/Infos")
+var infos = require("../utils/Infos")
 
 describe('Test: HomePage', () =>{
     beforeEach(() => {
