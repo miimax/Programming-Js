@@ -1,7 +1,9 @@
 class RegisterPage {
     elements = {
-        txtFirstName: () => cy.get("#firstname"),
-        txtLastName: () => cy.get("#lastname"),
+        // txtFirstName: () => cy.get("#firstname"),
+        txtFirstName: () => cy.xpath('//input[@id="firstname"]'),
+        // txtLastName: () => cy.get("#lastname"),
+        txtLastName: () => cy.xpath('//input[@id="lastname"]'),
         txtEmail: () => cy.get("#email_address"),
         txtPassword: () => cy.get("#password"),
         txtConfirmPwd: () => cy.get("#password-confirmation"),

@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-19T07:44:10.063Z",
+    "end": "2023-02-19T07:44:46.973Z",
+    "duration": 36910,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "506fee14-309d-4fa7-a978-943c682ac62e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\Test02_OrderProduct.cy.js",
+      "file": "cypress\\e2e\\tests\\Test02_OrderProduct.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fe4c1c38-8419-4c42-94ef-f73ba4efc79a",
+          "title": "Test: Order Product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User order product successfully without login",
+              "fullTitle": "Test: Order Product User order product successfully without login",
+              "timedOut": null,
+              "duration": 36797,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\n_HomePage.default.hoverOnMenu(\"Women\");\n_HomePage.default.chooseCategory(\"Tops\");\n_ProductPage.default.chooseProduct(\"Celeste Sports Bra\");\n_ProductDetailPage.default.chooseProductSizeColor(\"XS\", \"Green\");\n_ProductDetailPage.default.clickViewCart();\n_ProductDetailPage.default.clickProceedToCheckout();\ncy.fixture('userData').then(userData => {\n  _OrderPage.default.fillInformations(userData);\n});\n_OrderPage.default.placeOder();\n_OrderPage.default.verifyOderSuccessfully();",
+              "err": {},
+              "uuid": "31be08e7-655b-4412-a019-ada18f58a862",
+              "parentUUID": "fe4c1c38-8419-4c42-94ef-f73ba4efc79a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31be08e7-655b-4412-a019-ada18f58a862"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36797,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
