@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.527" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-02-19T04:06:27" tests="0" file="cypress\e2e\tests\Test02_OrderProduct.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test: Order Product" timestamp="2023-02-19T04:06:27" tests="1" time="6.507" failures="1">
+    <testcase name="Test: Order Product User order product successfully without login" time="0.000" classname="User order product successfully without login">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; $(...).AddFotoramaVideoEvents is not a function
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application" type="TypeError"><![CDATA[TypeError: The following error originated from your application code, not from Cypress.
+
+  > $(...).AddFotoramaVideoEvents is not a function
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+    at $.<computed>.<computed>.updateBaseImage (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/Magento_Swatches/js/swatch-renderer.js:90:120)
+    at $.<computed>.<computed>.updateBaseImage (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/jquery/ui-modules/widget.js:14:334)
+    at $.<computed>.<computed>._loadMedia (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/Magento_Swatches/js/swatch-renderer.js:67:6)
+    at $.<computed>.<computed>._loadMedia (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/jquery/ui-modules/widget.js:14:334)
+    at $.<computed>.<computed>._OnClick (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/Magento_Swatches/js/swatch-renderer.js:71:253)
+    at $.<computed>.<computed>._OnClick (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/jquery/ui-modules/widget.js:14:334)
+    at HTMLDivElement.<anonymous> (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/Magento_Swatches/js/swatch-renderer.js:66:183)
+    at HTMLDivElement.dispatch (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/jquery.js:351:447)
+    at elemData.handle (https://magento.softwaretestingboard.com/pub/static/version1666447838/frontend/Magento/luma/en_US/jquery.js:324:172)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

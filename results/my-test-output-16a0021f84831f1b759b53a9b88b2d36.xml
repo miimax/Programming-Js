@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="40.778" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-02-19T04:08:53" tests="0" file="cypress\e2e\tests\Test02_OrderProduct.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test: Order Product" timestamp="2023-02-19T04:08:53" tests="1" time="40.763" failures="0">
+    <testcase name="Test: Order Product User order product successfully without login" time="40.638" classname="User order product successfully without login">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-19T03:59:10.566Z",
+    "end": "2023-02-19T03:59:23.142Z",
+    "duration": 12576,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9a0c61b-bfe4-4fdd-b5a3-74e1e02f798d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\Test01_CreateAccount.cy.js",
+      "file": "cypress\\e2e\\tests\\Test01_CreateAccount.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "397f33e2-9436-4641-ab1b-9111dec8e56b",
+          "title": "Test: Create Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill all valid information then create an account successfully",
+              "fullTitle": "Test: Create Account Fill all valid information then create an account successfully",
+              "timedOut": null,
+              "duration": 12519,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"customer/account/create/\");\ncy.request('https://6397e26877359127a041da3e.mockapi.io/users').then(response => {\n  cy.writeFile('cypress/fixtures/randomData.json', response.body);\n  cy.fixture('randomData').then(user => {\n    _RegisterPage.default.createNewAccount(user);\n    _RegisterPage.default.verifyCreateAccountSuccessfully(user);\n  });\n});",
+              "err": {},
+              "uuid": "dd4ffdc4-fb2d-4ab3-a53d-c7360cfa7ec5",
+              "parentUUID": "397f33e2-9436-4641-ab1b-9111dec8e56b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd4ffdc4-fb2d-4ab3-a53d-c7360cfa7ec5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "embeddedScreeshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
