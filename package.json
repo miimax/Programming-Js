@@ -13,6 +13,7 @@
     "cypress": "^12.5.1",
     "cypress-mochawesome-reporter": "^3.3.0",
     "cypress-real-events": "^1.7.6",
+    "cypress-xpath": "^2.0.1",
     "jquery": "^3.6.3"
   }
 }
