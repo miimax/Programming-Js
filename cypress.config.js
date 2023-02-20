@@ -1,11 +1,6 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'cypress-multi-reporters',
-  reporterOptions: {
-    configFile: 'reporter-config.json',
-  },
-
 
   reporter: 'cypress-mochawesome-reporter',
   video: true,
@@ -20,12 +15,24 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here
+
+      config.env.sharedSecret = 
+        process.env.NODE_ENV === 'sharedSecret' ? 'first' : 'second'
+        return config
     },
   },
 
-  pageLoadTimeout: 20000,
+  pageLoadTimeout: 20000,  
+});
 
-  // reporter: "cypress-mochawesome-reporter",
+
+
+    // reporter: 'cypress-multi-reporters',
+  // reporterOptions: {
+  //   configFile: 'reporter-config.json',
+  // },
+
+    // reporter: "cypress-mochawesome-reporter",
   // eporterOptions: {
   //   reportDir: "cypress/reports",
   //   charts: true,
@@ -34,6 +41,3 @@ module.exports = defineConfig({
   //   inlineAssets: true
   // },
   // video: false
-  
-});
-
