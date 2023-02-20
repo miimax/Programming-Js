@@ -12,8 +12,9 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "cypress": "^12.5.1",
+    "cypress-mochawesome-reporter": "^3.3.0",
     "cypress-real-events": "^1.7.6",
-    "faker": "^6.6.6",
+    "faker": "^5.5.3",
     "jquery": "^3.6.3"
   }
 }
