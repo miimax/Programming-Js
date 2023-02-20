@@ -4,7 +4,7 @@ class HomePage {
         lnkSignin: () => cy.contains('Sign In')
     }
 
-    clickLinkSignin(){
+    clickLinkSignin() {
         this.elements.lnkSignin().click()
     }
 
@@ -14,7 +14,7 @@ class HomePage {
     }
 
     chooseCategory(category) {
-        cy.contains(category).click({force : true})
+        cy.contains(category).click({ force: true })
     }
 
     doSearch(searchTerm) {

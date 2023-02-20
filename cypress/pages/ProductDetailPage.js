@@ -19,6 +19,7 @@ class ProductDetailPage {
 
     clickProceedToCheckout() {
         // cy.get("[data-bind="i18n: title"]", { timeout: 10000 }).should("be.visible")
+        cy.wait(1000)
         cy.get("[data-bind='i18n: title']").should("be.visible")
         this.elements.btnProceedToCheckout().click({ force: true })
     }

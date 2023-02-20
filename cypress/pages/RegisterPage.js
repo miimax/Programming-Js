@@ -15,10 +15,6 @@ class RegisterPage {
         this.elements.txtPassword().type(registerUser.password)
         this.elements.txtConfirmPwd().type(registerUser.password)
         this.elements.btnCreateAnAccount().click()
-
-        console.log('after register')
-        console.log(registerUser.firstName)
-        console.log(registerUser.lastName)
     }
 }
 

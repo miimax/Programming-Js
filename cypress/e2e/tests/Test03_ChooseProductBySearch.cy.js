@@ -4,7 +4,7 @@ import ProductPage from "../../pages/ProductPage"
 import SearchResultPage from "../../pages/SearchResultPage"
 
 describe("Test03: Search", () => {
-    
+
     let searchTerm = "Jacket"
     let productName = "Ingrid Running Jacket"
     let path = "ingrid-running-jacket"

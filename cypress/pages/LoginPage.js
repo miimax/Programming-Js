@@ -7,7 +7,7 @@ class LoginPage {
 
     login(loginData) {
         this.elements.txtEmail().type(loginData.email)
-        this.elements.txtPassword().type(loginData.password)   
+        this.elements.txtPassword().type(loginData.password)
         this.elements.btnSignin().click()
     }
 }
