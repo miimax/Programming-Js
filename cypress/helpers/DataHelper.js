@@ -6,7 +6,7 @@ class DataHelper {
             "firstName": faker.name.firstName(),
             "lastName": faker.name.lastName(),
             "emailAddress": faker.internet.email(),
-            "password": faker.internet.password(20, true, '/[a-zA-Z]/', 'Hello@')
+            "password": faker.internet.password(20, true, "/[a-zA-Z]/", "Hello@")
         }
     }
 }

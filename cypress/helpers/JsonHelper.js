@@ -1,11 +1,11 @@
-// cy.request('https://6397e26877359127a041da3e.mockapi.io/users').then((response) => {
-//     cy.writeFile('cypress/e2e/fixtures/randomData.json', response.body)
+// cy.request("https://6397e26877359127a041da3e.mockapi.io/users").then((response) => {
+//     cy.writeFile("cypress/e2e/fixtures/randomData.json", response.body)
 // })
 
 
 class JsonHelper {
     getJson() {
-        cy.request('https://6397e26877359127a041da3e.mockapi.io/users')
+        cy.request("https://6397e26877359127a041da3e.mockapi.io/users")
             .then((response) => {
                 return response.body;
             })

@@ -38,7 +38,7 @@ class OrderPage {
     }
 
     verifyOrderSuccessfully() {
-        this.elements.msgOrderSuccessfully().should('have.text', 'Thank you for your purchase!')
+        this.elements.msgOrderSuccessfully().should("have.text", "Thank you for your purchase!")
     }
 }
 

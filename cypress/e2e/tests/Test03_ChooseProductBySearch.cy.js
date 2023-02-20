@@ -1,22 +1,23 @@
 import HomePage from "../../pages/HomePage"
 import ProductDetailPage from "../../pages/ProductDetailPage"
 import ProductPage from "../../pages/ProductPage"
+import SearchResultPage from "../../pages/SearchResultPage"
 
-describe("Test: Search", () => {
+describe("Test03: Search", () => {
     
-    let textSearch = "Jacket"
-    let productName = "Jade Yoga Jacket"
-    let url = "/jade-yoga-jacket.html"
+    let searchTerm = "Jacket"
+    let productName = "Ingrid Running Jacket"
+    let path = "ingrid-running-jacket"
 
-    it("User do search and verify product's name", () => {
+    it("User do search and verify product", () => {
         cy.visit("/")
 
-        HomePage.doSearch(textSearch)
+        HomePage.doSearch(searchTerm)
 
-        ProductPage.chooseProductFromList(productName)
+        SearchResultPage.chooseProductFromList(productName)
 
         ProductDetailPage.verifyIfProductNameIsCorrected(productName)
 
-        ProductDetailPage.verifyURLIsCorrected(url)
+        ProductDetailPage.verifyURLIsCorrected(path)
     })
 })

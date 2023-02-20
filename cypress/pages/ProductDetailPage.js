@@ -18,18 +18,18 @@ class ProductDetailPage {
     }
 
     clickProceedToCheckout() {
-        // cy.get("[data-bind='i18n: title']", { timeout: 10000 }).should('be.visible')
-        cy.get("[data-bind='i18n: title']").should('be.visible')
+        // cy.get("[data-bind="i18n: title"]", { timeout: 10000 }).should("be.visible")
+        cy.get("[data-bind='i18n: title']").should("be.visible")
         this.elements.btnProceedToCheckout().click({ force: true })
     }
 
 
     verifyIfProductNameIsCorrected(productName) {
-        cy.get('h1').should('include.text', productName)
+        cy.get("h1").should("include.text", productName)
     }
 
-    verifyURLIsCorrected(url) {
-        cy.url().should('include', url)
+    verifyURLIsCorrected(path) {
+        cy.url().should("include", path)
     }
 }
 
