@@ -1,4 +1,4 @@
-var infos = require("../../utils/Infos")
+var infos = require("../utils/Infos")
 
 const txtUsername = "input[name=uid]";
 const txtPassword = "input[name=password]"

@@ -1,4 +1,4 @@
-var loginPage = require('./pages/LoginPage')
+var loginPage = require('../pages/LoginPage')
 var infos = require("../utils/Infos")
 
 describe('Test: HomePage', () =>{
