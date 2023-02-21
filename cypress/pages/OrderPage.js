@@ -45,7 +45,7 @@ class OrderPage {
         this.elements.btnNext().click()
     }
 
-    placeOder() {
+    clickBtnPlaceOrder() {
         this.elements.chkCheck().check()
         this.elements.btnPlaceOrder().click()
     }

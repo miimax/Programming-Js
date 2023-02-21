@@ -13,6 +13,7 @@ class ProductDetailPage {
     }
 
     clickViewCart() {
+        cy.wait(2000)
         this.elements.btnViewCart().click()
         cy.contains("View and Edit Cart").click()
     }

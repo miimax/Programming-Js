@@ -18,7 +18,7 @@ describe('Test02: Order Product', () => {
         })
     })
 
-    it('User order product successfully after login', () => {
+    it.only('User order product successfully after login', () => {
         HomePage.clickLinkSignin()
         
         LoginPage.login(loginData)
@@ -33,7 +33,7 @@ describe('Test02: Order Product', () => {
 
         OrderPage.chooseShippingMethod(registerData)
 
-        OrderPage.placeOder()
+        OrderPage.clickBtnPlaceOrder()
 
         OrderPage.verifyOrderSuccessfully()
     })
@@ -55,7 +55,7 @@ describe('Test02: Order Product', () => {
 
         OrderPage.chooseShippingMethod(registerData)
 
-        OrderPage.placeOder()
+        OrderPage.clickBtnPlaceOrder()
 
         OrderPage.verifyOrderSuccessfully()
     })
